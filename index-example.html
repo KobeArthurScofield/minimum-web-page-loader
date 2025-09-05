@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The Loader title should be set here -->
+    <title>Minimize Web Loader</title>
+    <!-- Icon: The icon is embedded Base64 encoded image data. For icons with transparency, you should use PNG format, and should use a exported without anti-aliasing small version to reduce the size. PNG has bad compression ratio on continuous change of colour. -->
+    <link rel="icon" href="data:image/png;base64,aaaaaaaa">
+    <style>
+        body {
+            color: #cccccc;  /* Normal font colour. Customized allowed. */
+            line-height: 2rem;
+            background: #0c0c0c;  /* Normal background colour. Customized allowed. */
+            font-family: monospace;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 2ch;
+        }
+
+        header {
+            display: flex;
+            height: 3rem;
+            max-height: 4rem;
+            letter-spacing: 1ch;
+            line-height: 3rem;
+            overflow: visible;
+        }
+
+        header a {
+            padding: 0;
+        }
+
+        header a strong {
+            background-color: #cccccc;  /* Header background colour. Normally use the normal font colour. */
+            color: #0c0c0c;  /* Header font colour. Normally use the normal background colour. */
+            display: inline-block;
+            line-height: 2rem;
+            padding: 0 0ch 0 1ch;
+        }
+
+        header,
+        div,
+        footer {
+            margin: auto;
+            max-width: 120ch;
+            width: calc(100% - 8ch);
+        }
+
+        @media(max-width:128ch) {
+
+            header,
+            div,
+            footer {
+                margin: auto;
+                max-width: 80ch;
+                width: 100%;
+            }
+        }
+
+        @media(max-width:64ch) {
+            span {
+                display: none
+            }
+        }
+
+        nav {
+            padding: 1rem;
+        }
+
+        footer ul {
+            padding-left: 0;
+            color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Change the website title in the <strong></strong> tag. Changing contents in <span></span> tag is not recommended. -->
+        <a><strong>MINIMIZE WEB</strong><span> LOADER</span></a>
+    </header>
+    <div>
+        <!-- Website description. -->
+        <p>Example Website</p>
+        <!-- Selection section -->
+        <nav id="menu">
+            <!-- Optional name or description to the destination pages. -->
+            <p>Example website A</p>
+            <ul>
+                <!-- Selections -->
+                <li><a href="/a">Site A</a></li>
+                <li><a href="/a?func=test">Site A special</a></li>
+            </ul>
+            <p>Example Website B</p>
+            <ul>
+                <li><a href="/b">Site B</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <ul>
+            <!-- Footer section. Normally copyright description. <span></span> tag is allowed. -->
+            <li>&copy;MINIMIZE WEB</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
